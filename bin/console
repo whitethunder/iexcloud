@@ -2,9 +2,14 @@
 
 require "bundler/setup"
 require "iexcloud"
+require "dotenv"
 
-# You can add fixtures and/or initialization code here to make experimenting
-# with your gem easier. You can also use a different console, if you like.
+Dotenv.load(".env.test", ".env")
+
+IEXCloud.configure do |config|
+  config.api_version = "beta"
+  config.endpoint = "https://sandbox.iexapis.com/"
+end
 
 # (If you use this, don't forget to add pry to your Gemfile!)
 # require "pry"

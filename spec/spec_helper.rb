@@ -9,7 +9,7 @@ Dotenv.load(".env.test", ".env")
 
 IEXCloud.configure do |config|
   config.api_version = "beta"
-  config.endpoint = "https://cloud.iexapis.com/"
+  config.endpoint = "https://sandbox.iexapis.com/"
 end
 
 RSpec.configure do |config|

@@ -1,0 +1,6 @@
+--title "iexcloud"
+--markup markdown
+--readme README.md
+--private
+--query "@api.text == 'public'"
+lib/**/*.rb
