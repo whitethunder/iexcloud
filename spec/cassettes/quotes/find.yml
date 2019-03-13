@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cloud.iexapis.com/beta/stock/aapl/quote?token=<PUBLISHABLE_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Fri, 01 Mar 2019 04:10:17 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      set-cookie:
+      - ctoken=b55a271aae2f4f9f9fae40f49393b79f; Max-Age=43200; Path=/; Expires=Fri,
+        01 Mar 2019 16:10:16 GMT
+      content-security-policy:
+      - 'default-src ''self''; child-src ''none''; object-src ''self''; style-src
+        ''self'' ''unsafe-inline'' https://fonts.googleapis.com; font-src ''self''
+        https://js.intercomcdn.com/fonts/ https://fonts.gstatic.com; frame-src ''self''
+        https://js.stripe.com/; img-src ''self'' data: https://*.intercomcdn.com https://www.google-analytics.com
+        https://downloads.intercomcdn.com/; connect-src ''self'' https://auth.iexcloud.io
+        https://api.iexcloud.io https://api.iexcloud.io https://cloud.iexapis.com
+        wss://iexcloud.io wss://tops.iexcloud.io wss://api.iexcloud.io wss://iexcloud.io
+        https://api-iam.intercom.io/messenger/ https://nexus-websocket-a.intercom.io/
+        https://nexus-websocket-b.intercom.io/ wss://nexus-websocket-a.intercom.io/
+        wss://nexus-websocket-b.intercom.io/ https://www.google-analytics.com; script-src
+        ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.google.com/recaptcha/api.js
+        https://www.google-analytics.com https://js.stripe.com/v3/ https://widget.intercom.io/widget/lhos563b
+        https://js.intercomcdn.com/ https://www.googletagmanager.com;'
+      x-content-security-policy:
+      - 'default-src ''self''; child-src ''none''; object-src ''self''; style-src
+        ''self'' ''unsafe-inline'' https://fonts.googleapis.com; font-src ''self''
+        https://js.intercomcdn.com/fonts/ https://fonts.gstatic.com; frame-src ''self''
+        https://js.stripe.com/; img-src ''self'' data: https://*.intercomcdn.com https://www.google-analytics.com
+        https://downloads.intercomcdn.com/; connect-src ''self'' https://auth.iexcloud.io
+        https://api.iexcloud.io https://api.iexcloud.io https://cloud.iexapis.com
+        wss://iexcloud.io wss://tops.iexcloud.io wss://api.iexcloud.io wss://iexcloud.io
+        https://api-iam.intercom.io/messenger/ https://nexus-websocket-a.intercom.io/
+        https://nexus-websocket-b.intercom.io/ wss://nexus-websocket-a.intercom.io/
+        wss://nexus-websocket-b.intercom.io/ https://www.google-analytics.com; script-src
+        ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.google.com/recaptcha/api.js
+        https://www.google-analytics.com https://js.stripe.com/v3/ https://widget.intercom.io/widget/lhos563b
+        https://js.intercomcdn.com/ https://www.googletagmanager.com;'
+      frame-options:
+      - SAMEORIGIN
+      x-frame-options:
+      - SAMEORIGIN
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-methods:
+      - GET, OPTIONS
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"AAPL","companyName":"Apple Inc.","calculationPrice":"close","open":174.32,"openTime":1551364200315,"close":173.15,"closeTime":1551387600237,"high":175,"low":172.63,"latestPrice":173.15,"latestSource":"Close","latestTime":"February
+        28, 2019","latestUpdate":1551387600237,"latestVolume":28451647,"iexRealtimePrice":173.1,"iexRealtimeSize":111,"iexLastUpdated":1551387599508,"delayedPrice":173.26,"delayedPriceTime":1551388500010,"extendedPrice":174.75,"extendedChange":1.6,"extendedChangePercent":0.00924,"extendedPriceTime":1551401990494,"previousClose":174.87,"change":-1.72,"changePercent":-0.00984,"iexMarketPercent":0.017209056473953863,"iexVolume":489626,"avgTotalVolume":28310674,"iexBidPrice":0,"iexBidSize":0,"iexAskPrice":0,"iexAskSize":0,"marketCap":816450732000,"peRatio":14.11,"week52High":233.47,"week52Low":142,"ytdChange":0.097493}'
+    http_version:
+  recorded_at: Fri, 01 Mar 2019 04:10:17 GMT
+recorded_with: VCR 4.0.0
