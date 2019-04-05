@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://cloud.iexapis.com/beta/stock/aapl/quote?token=<PUBLISHABLE_TOKEN>
+    uri: https://sandbox.iexapis.com/beta/stock/aapl/quote?token=<PUBLISHABLE_TOKEN>
     body:
       encoding: US-ASCII
       string: ''

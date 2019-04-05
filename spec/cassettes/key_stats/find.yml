@@ -1,0 +1,160 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.iexapis.com/beta/stock/aapl/stats/?token=<PUBLISHABLE_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Fri, 05 Apr 2019 04:28:54 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      set-cookie:
+      - ctoken=138c41889c4d45d3a68f143c2477f917; Max-Age=43200; Path=/; Expires=Fri,
+        05 Apr 2019 16:28:54 GMT
+      content-security-policy:
+      - 'default-src ''self''; child-src ''none''; object-src ''self''; style-src
+        ''self'' ''unsafe-inline'' https://fonts.googleapis.com; font-src ''self''
+        https://js.intercomcdn.com/fonts/ https://fonts.gstatic.com; frame-src ''self''
+        https://portal.productboard.com/ https://js.stripe.com/; img-src ''self''
+        data: https://*.intercomcdn.com/ https://static.intercomassets.com/ https://www.google-analytics.com
+        https://downloads.intercomcdn.com/; connect-src ''self'' https://auth.iexcloud.io
+        https://api.iexcloud.io https://api.iexcloud.io https://cloud.iexapis.com
+        wss://iexcloud.io wss://tops.iexcloud.io wss://api.iexcloud.io wss://iexcloud.io
+        https://api-iam.intercom.io/messenger/ https://nexus-websocket-a.intercom.io/
+        https://nexus-websocket-b.intercom.io/ wss://nexus-websocket-a.intercom.io/
+        wss://nexus-websocket-b.intercom.io/ https://www.google-analytics.com; script-src
+        ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.google.com/recaptcha/api.js
+        https://www.google-analytics.com https://js.stripe.com/v3/ https://widget.intercom.io/widget/lhos563b
+        https://js.intercomcdn.com/ https://www.googletagmanager.com;'
+      x-content-security-policy:
+      - 'default-src ''self''; child-src ''none''; object-src ''self''; style-src
+        ''self'' ''unsafe-inline'' https://fonts.googleapis.com; font-src ''self''
+        https://js.intercomcdn.com/fonts/ https://fonts.gstatic.com; frame-src ''self''
+        https://portal.productboard.com/ https://js.stripe.com/; img-src ''self''
+        data: https://*.intercomcdn.com/ https://static.intercomassets.com/ https://www.google-analytics.com
+        https://downloads.intercomcdn.com/; connect-src ''self'' https://auth.iexcloud.io
+        https://api.iexcloud.io https://api.iexcloud.io https://cloud.iexapis.com
+        wss://iexcloud.io wss://tops.iexcloud.io wss://api.iexcloud.io wss://iexcloud.io
+        https://api-iam.intercom.io/messenger/ https://nexus-websocket-a.intercom.io/
+        https://nexus-websocket-b.intercom.io/ wss://nexus-websocket-a.intercom.io/
+        wss://nexus-websocket-b.intercom.io/ https://www.google-analytics.com; script-src
+        ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.google.com/recaptcha/api.js
+        https://www.google-analytics.com https://js.stripe.com/v3/ https://widget.intercom.io/widget/lhos563b
+        https://js.intercomcdn.com/ https://www.googletagmanager.com;'
+      frame-options:
+      - SAMEORIGIN
+      x-frame-options:
+      - SAMEORIGIN
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-methods:
+      - GET, OPTIONS
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"week52change":0.14326087546502658,"week52high":243.21,"week52low":143,"marketcap":947221518705,"employees":133537,"day200MovingAvg":199.48,"day50MovingAvg":183.99,"float":4938556462,"avg10Volume":33938836.1,"avg30Volume":29298672.7,"ttmEPS":12.83,"ttmDividendRate":2.83,"companyName":"Apple,
+        Inc.","sharesOutstanding":4764529495,"maxChangePercent":197.646432,"year5ChangePercent":1.58223,"year2ChangePercent":0.358164,"year1ChangePercent":0.139911,"ytdChangePercent":0.244821,"month6ChangePercent":-0.148607,"month3ChangePercent":0.323706,"month1ChangePercent":0.11348,"day30ChangePercent":0.145217,"day5ChangePercent":0.035999,"nextDividendRate":null,"dividendYield":0.014636740975907303,"nextEarningsDate":"2019-05-10","exDividendDate":"2019-02-18","peRatio":16.27}'
+    http_version: 
+  recorded_at: Fri, 05 Apr 2019 04:28:54 GMT
+- request:
+    method: get
+    uri: https://sandbox.iexapis.com/beta/stock/aapl/stats/nextEarningsDate?token=<PUBLISHABLE_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Fri, 05 Apr 2019 04:57:14 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '12'
+      connection:
+      - keep-alive
+      set-cookie:
+      - ctoken=f5d169fb4715439cb7b02038027774f5; Max-Age=43200; Path=/; Expires=Fri,
+        05 Apr 2019 16:57:14 GMT
+      content-security-policy:
+      - 'default-src ''self''; child-src ''none''; object-src ''self''; style-src
+        ''self'' ''unsafe-inline'' https://fonts.googleapis.com; font-src ''self''
+        https://js.intercomcdn.com/fonts/ https://fonts.gstatic.com; frame-src ''self''
+        https://portal.productboard.com/ https://js.stripe.com/; img-src ''self''
+        data: https://*.intercomcdn.com/ https://static.intercomassets.com/ https://www.google-analytics.com
+        https://downloads.intercomcdn.com/; connect-src ''self'' https://auth.iexcloud.io
+        https://api.iexcloud.io https://api.iexcloud.io https://cloud.iexapis.com
+        wss://iexcloud.io wss://tops.iexcloud.io wss://api.iexcloud.io wss://iexcloud.io
+        https://api-iam.intercom.io/messenger/ https://nexus-websocket-a.intercom.io/
+        https://nexus-websocket-b.intercom.io/ wss://nexus-websocket-a.intercom.io/
+        wss://nexus-websocket-b.intercom.io/ https://www.google-analytics.com; script-src
+        ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.google.com/recaptcha/api.js
+        https://www.google-analytics.com https://js.stripe.com/v3/ https://widget.intercom.io/widget/lhos563b
+        https://js.intercomcdn.com/ https://www.googletagmanager.com;'
+      x-content-security-policy:
+      - 'default-src ''self''; child-src ''none''; object-src ''self''; style-src
+        ''self'' ''unsafe-inline'' https://fonts.googleapis.com; font-src ''self''
+        https://js.intercomcdn.com/fonts/ https://fonts.gstatic.com; frame-src ''self''
+        https://portal.productboard.com/ https://js.stripe.com/; img-src ''self''
+        data: https://*.intercomcdn.com/ https://static.intercomassets.com/ https://www.google-analytics.com
+        https://downloads.intercomcdn.com/; connect-src ''self'' https://auth.iexcloud.io
+        https://api.iexcloud.io https://api.iexcloud.io https://cloud.iexapis.com
+        wss://iexcloud.io wss://tops.iexcloud.io wss://api.iexcloud.io wss://iexcloud.io
+        https://api-iam.intercom.io/messenger/ https://nexus-websocket-a.intercom.io/
+        https://nexus-websocket-b.intercom.io/ wss://nexus-websocket-a.intercom.io/
+        wss://nexus-websocket-b.intercom.io/ https://www.google-analytics.com; script-src
+        ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.google.com/recaptcha/api.js
+        https://www.google-analytics.com https://js.stripe.com/v3/ https://widget.intercom.io/widget/lhos563b
+        https://js.intercomcdn.com/ https://www.googletagmanager.com;'
+      frame-options:
+      - SAMEORIGIN
+      x-frame-options:
+      - SAMEORIGIN
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-methods:
+      - GET, OPTIONS
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+    body:
+      encoding: UTF-8
+      string: '"2019-05-05"'
+    http_version: 
+  recorded_at: Fri, 05 Apr 2019 04:57:14 GMT
+recorded_with: VCR 4.0.0
